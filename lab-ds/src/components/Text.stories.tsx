@@ -5,8 +5,9 @@ export default {
     title: 'Components/Text',
     component: Text,
     args: {
-        children: 'Text MD',
+        children: 'Text',
         size: 'md',
+        asChild: false,
     },
     argTypes: {
         size: {
@@ -15,12 +16,27 @@ export default {
                 type: 'inline-radio', 
             },
         },
-    },
+        children: {
+            table: {
+                disable: true,
+            },
+        },
+        asChild:{
+            table: {
+                disable: true,
+            },
+        }
+    }
 } as Meta<TextProps>;
 
 export const Default: StoryObj<TextProps> = {
+  
+}
+
+export const Small: StoryObj<TextProps> = {
     args: {
-        children: 'Text Default',
+        size: 'sm',
+        children: 'Text Small',
     }
 }
 
@@ -28,13 +44,6 @@ export const Medium: StoryObj<TextProps> = {
     args: {
         size: 'md',
         children: 'Text Medium',
-    }
-}
-
-export const Small: StoryObj<TextProps> = {
-    args: {
-        size: 'sm',
-        children: 'Text Small',
     }
 }
 
@@ -52,12 +61,5 @@ export const CustomComponent: StoryObj<TextProps> = {
         children: (
             <p>Custom Text</p>
         )
-    },
-    argTypes: {
-        children: {
-            table: {
-                disable: true,
-            },
-        }
     }
 }
