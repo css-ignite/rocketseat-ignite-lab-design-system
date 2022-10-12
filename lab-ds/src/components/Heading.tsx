@@ -9,10 +9,10 @@ export interface HeadingProps {
 }
 
 export function Heading({ size = 'md', children, asChild }: HeadingProps) {
-    const component = asChild ? Slot : 'h2';
+    const Comp = asChild ? Slot : 'h2';
 
     return (
-        <span
+        <Comp
             className={clsx(
                 "text-gray-100 font-bold font-sans",
                 {
@@ -23,6 +23,6 @@ export function Heading({ size = 'md', children, asChild }: HeadingProps) {
             )}
         >
             {children}
-        </span>
+        </Comp>
     )
 }
