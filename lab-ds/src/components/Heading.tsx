@@ -5,7 +5,7 @@ import { ReactNode } from 'react';
 export interface HeadingProps {
     size?: 'sm' | 'md' | 'lg';
     children: ReactNode;
-    asChild: boolean;
+    asChild?: boolean;
 }
 
 export function Heading({ size = 'md', children, asChild }: HeadingProps) {

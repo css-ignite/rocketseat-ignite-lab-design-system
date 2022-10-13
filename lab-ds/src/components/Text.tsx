@@ -5,7 +5,7 @@ import { ReactNode } from 'react';
 export interface TextProps {
     size?: 'sm' | 'md' | 'lg';
     children: ReactNode;
-    asChild: boolean;
+    asChild?: boolean;
 }
 
 export function Text({ size = 'md', children, asChild }: TextProps) {
