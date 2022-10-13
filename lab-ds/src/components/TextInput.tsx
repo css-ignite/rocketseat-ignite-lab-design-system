@@ -29,7 +29,7 @@ function TextInputIcon(props: TextInputIconProps) {
 
 TextInputIcon.displayName = 'TextInput.Icon';
 
-export interface TextInputInputProps extends InputHTMLAttributes<HTMLInputElement> {}
+export interface TextInputInputProps extends InputHTMLAttributes<HTMLInputElement> { }
 
 function TextInputInput(props: TextInputInputProps) {
     return (

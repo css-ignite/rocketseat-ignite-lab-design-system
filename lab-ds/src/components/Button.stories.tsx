@@ -8,7 +8,7 @@ export default {
         children: 'Button',
     },
     argTypes: {
-        asChild:{
+        asChild: {
             table: {
                 disable: true,
             },
@@ -17,5 +17,5 @@ export default {
 } as Meta<ButtonProps>;
 
 export const Default: StoryObj<ButtonProps> = {
-  
+
 }

@@ -11,8 +11,11 @@ export default {
     argTypes: {
 
     },
+} as Meta<CheckboxProps>;
+
+export const Default: StoryObj<CheckboxProps> = {
     decorators: [
-       (Story) => {
+        (Story) => {
             return (
                 <div className="flex items-center gap-2">
                     {Story()}
@@ -23,8 +26,49 @@ export default {
             )
         },
     ],
-} as Meta<CheckboxProps>;
+}
 
-export const Default: StoryObj<CheckboxProps> = {
+export const Small: StoryObj<CheckboxProps> = {
+    decorators: [
+        (Story) => {
+            return (
+                <div className="flex items-center gap-2">
+                    {Story()}
+                    <Text size="sm">
+                        Lembrar de mim por 30 dias
+                    </Text>
+                </div>
+            )
+        },
+    ],
+}
 
+export const Medium: StoryObj<CheckboxProps> = {
+    decorators: [
+        (Story) => {
+            return (
+                <div className="flex items-center gap-2">
+                    {Story()}
+                    <Text size="md">
+                        Lembrar de mim por 30 dias
+                    </Text>
+                </div>
+            )
+        },
+    ],
+}
+
+export const Large: StoryObj<CheckboxProps> = {
+    decorators: [
+        (Story) => {
+            return (
+                <div className="flex items-center gap-2">
+                    {Story()}
+                    <Text size="lg">
+                        Lembrar de mim por 30 dias
+                    </Text>
+                </div>
+            )
+        },
+    ],
 }

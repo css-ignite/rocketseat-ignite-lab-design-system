@@ -12,8 +12,8 @@ export default {
     argTypes: {
         size: {
             options: ['sm', 'md', 'lg'],
-            control: { 
-                type: 'inline-radio', 
+            control: {
+                type: 'inline-radio',
             },
         },
         children: {
@@ -21,7 +21,7 @@ export default {
                 disable: true,
             },
         },
-        asChild:{
+        asChild: {
             table: {
                 disable: true,
             },
@@ -30,7 +30,7 @@ export default {
 } as Meta<TextProps>;
 
 export const Default: StoryObj<TextProps> = {
-  
+
 }
 
 export const Small: StoryObj<TextProps> = {

@@ -23,11 +23,15 @@ export default {
 } as Meta<TextInputRootProps>;
 
 export const Default: StoryObj<TextInputRootProps> = {
-  
+
 }
 
-export const WithoutIcon: StoryObj<TextInputRootProps> = {
-  args: {
-    children: <TextInput.Input placeholder="placeholder" />
-  }
+export const TextInputWithIcon: StoryObj<TextInputRootProps> = {
+
+}
+
+export const TextInputWithoutIcon: StoryObj<TextInputRootProps> = {
+    args: {
+        children: <TextInput.Input placeholder="placeholder" />
+    }
 }

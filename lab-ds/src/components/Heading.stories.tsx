@@ -11,8 +11,8 @@ export default {
     argTypes: {
         size: {
             options: ['sm', 'md', 'lg'],
-            control: { 
-                type: 'inline-radio', 
+            control: {
+                type: 'inline-radio',
             },
         },
         children: {
@@ -20,7 +20,7 @@ export default {
                 disable: true,
             },
         },
-        asChild:{
+        asChild: {
             table: {
                 disable: true,
             },
