@@ -16,13 +16,6 @@ Projeto desenvolvido durante a semana de 10/10/2022 a 13/11/2022, onde pude ter 
 - Criação do Front-End em Vite
 - Implementação de testes com Jest no Storybook.
 
-Durante as aulas, pude conhecer como montar uma estrutura visual de um design system na prática com o 
-Figma e como porta-lo para o código disponibilizando assim os dados para testes dos componentes via StoryBook,
-deploy automatizado com GitHub Actions e simulação do Front-End em Vite.
-
-![image](https://user-images.githubusercontent.com/12506432/195761826-2861aa90-156f-45d3-9ec3-6730930b3757.png)
-
-
 ## Tecnologias e ferramentas utilizadas
 
 - [React.JS (Vite)](https://vitejs.dev/)
@@ -34,6 +27,12 @@ deploy automatizado com GitHub Actions e simulação do Front-End em Vite.
 - [Github Actions](https://github.com/features/actions)
 - [Jest](https://jestjs.io/pt-BR/)
 - [MSW](https://mswjs.io/) 
+
+Durante as aulas, pude conhecer como montar uma estrutura visual de um design system na prática com o 
+Figma e como porta-lo para o código disponibilizando assim os dados para testes dos componentes via StoryBook,
+deploy automatizado com GitHub Actions e simulação do Front-End em Vite.
+
+![image](https://user-images.githubusercontent.com/12506432/195761826-2861aa90-156f-45d3-9ec3-6730930b3757.png)
 
 </div>
 
