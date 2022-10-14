@@ -60,7 +60,7 @@ $ git clone https://github.com/claudneysessa/RocketSeat-ignite-lab-design-system
 
 ```
 
-Siga os passos abaixo
+Siga os passos abaixo na pasta [lab-ds]
 ```bash
 # Instalar as Dependências
 $ npm i
