@@ -2,8 +2,8 @@
 
 <h1>Ignite Lab #3 - Do Figma ao React </h1>
   
-https://www.rocketseat.com.br/
-<p>Design System com Figma, React e StoryBook</p> 
+Evento disponibilizado pela [RocketSeat](https://www.rocketseat.com.br/)
+<p>Tema: Design System com Figma, React e StoryBook</p> 
 <img alt="GitHub Contributors" src="https://img.shields.io/github/contributors/claudneysessa/RocketSeat-ignite-lab-design-system" />
 
 Projeto desenvolvido durante a semana de 10/10/2022 a 13/11/2022, onde pude ter contato com várias ferramentas para a construção de um Design System como, Figma, React, StoryBook e TailwindCSS.
