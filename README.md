@@ -72,11 +72,11 @@ Veja aqui a publicação do StoryBook no GitHub Pages
 Clone o projeto e acesse a pasta
 
 ```bash
-$ git clone https://github.com/claudneysessa/RocketSeat-ignite-lab-design-system
+$ git clone https://github.com/claudneysessa/rocketseat-ignite-lab-design-system
 
 ```
 
-Siga os passos abaixo na pasta
+Siga os passos abaixo:
 ```bash
 # Instalar as Dependências
 $ npm i
