@@ -1,9 +1,0 @@
-{
-    "[html]": {
-        "editor.formatOnSave": true,
-        "editor.suggest.insertMode": "replace"
-    },
-    "[typescript]": {
-        "editor.formatOnSave": true
-    }
-}
