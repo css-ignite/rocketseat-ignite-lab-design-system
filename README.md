@@ -51,6 +51,15 @@ Estrutura dos Componentea gerados:
 
 ![image](https://user-images.githubusercontent.com/12506432/195759371-72ff7fff-39ac-46ae-896e-8a9059408f21.png)
 
+## Deploy no Github Pages
+
+Veja aqui o StoryBook
+
+https://claudneysessa.github.io/rocketseat-ignite-lab-design-system/?path=/story/components-button--default
+
+<img width="1440" alt="image" src="https://user-images.githubusercontent.com/12506432/195781765-2e02202b-a244-4911-aebf-316fbaae4a5c.png">
+
+
 ## Instalação e uso
 
 Clone o projeto e acesse a pasta
