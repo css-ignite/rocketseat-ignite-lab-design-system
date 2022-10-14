@@ -132,6 +132,10 @@ $ npm run storybook
     </a>
 </div>
 
+## Veja o meu Perfil no Github
+
+https://github.com/claudneysessa
+
 ## Contact
  - Instagram: [https://www.instagram.com/claudneysessa/](https://www.instagram.com/claudneysessa/)
  - Linkedin: [https://www.linkedin.com/in/claudneysessa/](https://www.linkedin.com/in/claudneysessa/)
