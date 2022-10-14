@@ -16,6 +16,8 @@ module.exports = {
       "storyStoreV7": true
     },
   
+    // Vite config
+    // Configuração para Deploy no GitHub
     viteFinal: (config, { configType }) => {
       if (configType === 'PRODUTION') {
         config.base = '/rocketseat-ignite-lab-design-system/'
