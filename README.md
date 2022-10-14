@@ -51,10 +51,6 @@ Estrutura dos Componentea gerados:
 
 ![image](https://user-images.githubusercontent.com/12506432/195759371-72ff7fff-39ac-46ae-896e-8a9059408f21.png)
 
-Paleta de Cores:
-
-![image](https://user-images.githubusercontent.com/12506432/195759482-86d35c71-2902-43a7-92e1-cef07ecc8775.png)
-
 ## Instalação e uso
 
 Clone o projeto e acesse a pasta
