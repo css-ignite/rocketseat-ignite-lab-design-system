@@ -57,8 +57,7 @@ Veja aqui o StoryBook
 
 https://claudneysessa.github.io/rocketseat-ignite-lab-design-system/?path=/story/components-button--default
 
-<img width="1440" alt="image" src="https://user-images.githubusercontent.com/12506432/195781765-2e02202b-a244-4911-aebf-316fbaae4a5c.png">
-
+<img width="1440" alt="image" src="https://user-images.githubusercontent.com/12506432/195782423-ff44783f-e7c1-4fe1-955d-bfd818c67bd5.png">
 
 ## Instalação e uso
 
