@@ -51,7 +51,7 @@ Estrutura dos Componentea gerados:
 
 ![image](https://user-images.githubusercontent.com/12506432/195759371-72ff7fff-39ac-46ae-896e-8a9059408f21.png)
 
-## Deploy no Github Pages
+## Deploy do Storybook no Github Pages
 
 Veja aqui a publicação do StoryBook no GitHub Pages
 
