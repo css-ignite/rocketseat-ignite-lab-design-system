@@ -90,6 +90,12 @@ npm install @radix-ui/react-slot
 npm i phosphor-react 
 ```
 
+### Adicionando o RadixUI-Checkbox
+
+```bash
+npm install @radix-ui/react-checkbox
+```
+
 ## Deploy do Storybook no Github Pages
 
 Veja aqui a publicação do StoryBook no GitHub Pages
