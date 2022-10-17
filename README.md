@@ -54,7 +54,7 @@ Estrutura dos Componentea gerados:
 
 ## Configurando o Projeto
 
-### Iniciando o repositório do Git
+## Iniciando o repositório do Git
 
 Aqui eu inicio o meu repositório no git
 
@@ -62,7 +62,7 @@ Aqui eu inicio o meu repositório no git
 git init
 ```
 
-### Iniciando a pasta do projeto
+## Iniciando a pasta do projeto
 
 Iniciando o projeto com o NodeJS
 
@@ -70,7 +70,7 @@ Iniciando o projeto com o NodeJS
 npm init -y
 ```
 
-### Configuração inicial do .gitignore
+## Configuração inicial do .gitignore
 
 ```.gitignore
 # Logs
@@ -99,7 +99,7 @@ dist-ssr
 *.sw?
 ```
 
-### Instalando o TailwindCSS
+## Instalando o TailwindCSS
 
 ```bash
 npm install -D tailwindcss  postcss autoprefixer
@@ -155,26 +155,26 @@ module.exports = {
 }
 ```
 
-### Adicionando o StoryBook
+## Adicionando o StoryBook
 
 ```bash
 npm i @storybook/storybook-deployer --save-dev
 npx sb init --builder @storybook/builder-vite --use-npm 
 ```
 
-### Adicionando o RadixUI-Slot
+## Adicionando o RadixUI-Slot
 
 ```bash
 npm install @radix-ui/react-slot
 ```
 
-### Adicionando o phosphor-react
+## Adicionando o phosphor-react
 
 ```bash
 npm i phosphor-react 
 ```
 
-### Adicionando o RadixUI-Checkbox
+## Adicionando o RadixUI-Checkbox
 
 ```bash
 npm install @radix-ui/react-checkbox
