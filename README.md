@@ -1,16 +1,19 @@
+# Ignite Lab #3 - Do Figma ao React
+
 ![image](https://user-images.githubusercontent.com/12506432/195759740-3fd7e15d-afe7-4c8e-9e11-1767b2ac78bf.png)
 
-<h1>Ignite Lab #3 - Do Figma ao React </h1>
-  
 Evento disponibilizado pela [RocketSeat](https://www.rocketseat.com.br/)
-<p>Tema: Design System com Figma, React e StoryBook</p> 
-<img alt="GitHub Contributors" src="https://img.shields.io/github/contributors/claudneysessa/RocketSeat-ignite-lab-design-system" />
+
+## Tema: Design System com Figma, React e StoryBook
+
+<img alt="GitHub Contributors" src="https://img.shields.io/github/contributors/claudneysessa/RocketSeat-ignite-lab-design-system"/>
 
 Projeto desenvolvido durante a semana de 10/10/2022 a 13/11/2022, onde pude ter contato com várias ferramentas para a construção de um Design System como, Figma, React, StoryBook e TailwindCSS.
 
-## A aplicação teve as seguintes etapas de construção:
+## A aplicação teve as seguintes etapas de construção
+
 - Projeto no Figma
-- Design System - Criação dos componentes 
+- Design System - Criação dos componentes
 - Documentação no Storybook
 - Deploy automatizado com GitHub Actions
 - Criação do Front-End em Vite
@@ -26,10 +29,9 @@ Projeto desenvolvido durante a semana de 10/10/2022 a 13/11/2022, onde pude ter 
 - [Addon A11y](https://www.npmjs.com/package/@storybook/addon-a11y)
 - [Github Actions](https://github.com/features/actions)
 - [Jest](https://jestjs.io/pt-BR/)
-- [MSW](https://mswjs.io/) 
+- [MSW](https://mswjs.io/)
 
-Durante as aulas, pude conhecer como montar uma estrutura visual de um design system na prática com o 
-Figma e como porta-lo para o código disponibilizando assim os dados para testes dos componentes via StoryBook,
+Durante as aulas, pude conhecer como montar uma estrutura visual de um design system na prática com o Figma e como porta-lo para o código disponibilizando assim os dados para testes dos componentes via StoryBook,
 deploy automatizado com GitHub Actions e simulação do Front-End em Vite.
 
 ![image](https://user-images.githubusercontent.com/12506432/195761826-2861aa90-156f-45d3-9ec3-6730930b3757.png)
@@ -37,13 +39,13 @@ deploy automatizado com GitHub Actions e simulação do Front-End em Vite.
 </div>
 
 ---
- 
-Projeto no Figma:
 
-https://www.figma.com/file/2ws9TBu6IweT00RnFdCo6a/Ignite-Lab-Design-System?node-id=14%3A162
- 
+## Projeto no Figma
+
+[https://www.figma.com/file/2ws9TBu6IweT00RnFdCo6a/Ignite-Lab-Design-System?node-id=14%3A162](https://www.figma.com/file/2ws9TBu6IweT00RnFdCo6a/Ignite-Lab-Design-System?node-id=14%3A162)
+
 Pagina de Login:
- 
+
 ![image](https://user-images.githubusercontent.com/12506432/195759270-ae386b8b-4737-408b-9a74-f961af057651.png)
 
 Estrutura dos Componentea gerados:
@@ -54,14 +56,47 @@ Estrutura dos Componentea gerados:
 
 ### Iniciando o repositório do Git
 
+Aqui eu inicio o meu repositório no git
+
 ```bash
 git init
 ```
 
 ### Iniciando a pasta do projeto
 
+Iniciando o projeto com o NodeJS
+
 ```bash
 npm init -y
+```
+
+### Configuração inicial do .gitignore
+
+```.gitignore
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
 ```
 
 ### Instalando o TailwindCSS
@@ -69,6 +104,55 @@ npm init -y
 ```bash
 npm install -D tailwindcss  postcss autoprefixer
 npx tailwindcss init -p
+```
+
+## Exportando os Tokens do Figma para o projeto
+
+Aqui eu gero o arquivo com os Tokens gerados no figma
+
+- /Users/claudneysessa/Developer/React/rocketseat-ignite-lab-design-system/tailwind.config.cjs
+  - fontSize
+  - colors
+
+```cjs
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: [
+    './src/**/*.tsx',
+  ],
+  theme: {
+    fontSize: {
+      'xs': 14,
+      'sm': 16,
+      'md': 18,
+      'lg': 20,
+      'xl': 24,
+      '2xl': 32,
+    },
+    colors: {
+      black: '#000',
+      white: '#fff',
+      transparent: 'transparent',
+      gray: {
+        900: '#121214',
+        800: '#202024',
+        400: '#7c7c8a',
+        200: '#c4c4cc',
+        100: '#e1e1e6',
+      },
+      cyan:{
+        500: '#81d8f7',
+        300: '#98e1fb',
+      }
+    },
+    extend: {
+      fontFamily: {
+        sans: ['Inter', 'sans-serif'],
+      }
+    },
+  },
+  plugins: [],
+}
 ```
 
 ### Adicionando o StoryBook
@@ -100,7 +184,7 @@ npm install @radix-ui/react-checkbox
 
 Veja aqui a publicação do StoryBook no GitHub Pages
 
- - [https://claudneysessa.github.io/rocketseat-ignite-lab-design-system](https://claudneysessa.github.io/rocketseat-ignite-lab-design-system/?path=/story/components-button--default)
+- [https://claudneysessa.github.io/rocketseat-ignite-lab-design-system](https://claudneysessa.github.io/rocketseat-ignite-lab-design-system/?path=/story/components-button--default)
 
 <img width="1440" alt="image" src="https://user-images.githubusercontent.com/12506432/195783039-a5894c65-576a-4afa-a53a-92e09359e40c.png">
 
@@ -117,11 +201,11 @@ Veja aqui a publicação do StoryBook no GitHub Pages
 Clone o projeto e acesse a pasta
 
 ```bash
-$ git clone https://github.com/claudneysessa/rocketseat-ignite-lab-design-system
-
+git clone https://github.com/claudneysessa/rocketseat-ignite-lab-design-system
 ```
 
 Siga os passos abaixo:
+
 ```bash
 # Instalar as Dependências
 $ npm i
@@ -132,6 +216,7 @@ $ npm run dev
 # Iniciar o StoryBook
 $ npm run storybook
 ```
+
 ## Ferramentas Utilizadas
 
 <div>
