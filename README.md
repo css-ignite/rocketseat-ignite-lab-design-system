@@ -99,6 +99,19 @@ dist-ssr
 *.sw?
 ```
 
+## Removendos pastas padrões para criação da estrutura do projeto
+
+Arquivos Removidos
+
+- src/App.css
+- src/index.css
+- src/assets/react.svg
+
+Arquivos editados
+
+- App.tsx
+- main.tsx
+
 ## Instalando o TailwindCSS
 
 ```bash
@@ -106,13 +119,41 @@ npm install -D tailwindcss  postcss autoprefixer
 npx tailwindcss init -p
 ```
 
+## Configurando o globals.css
+
+```css
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+```
+
 ## Exportando os Tokens do Figma para o projeto
 
 Aqui eu gero o arquivo com os Tokens gerados no figma
 
-- /Users/claudneysessa/Developer/React/rocketseat-ignite-lab-design-system/tailwind.config.cjs
+- tailwind.config.cjs
   - fontSize
   - colors
+  - fontFamily
+
+Adicionando a fonte inter do GoogleFonts
+
+```html
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+    <title>Ignite Lab Design System</title>
+  </head>
+  <body>
+    <div id="root"></div>
+```
+
+Configurando os Tokens no TailwindCSS
 
 ```cjs
 /** @type {import('tailwindcss').Config} */
@@ -155,12 +196,77 @@ module.exports = {
 }
 ```
 
+Instalando o CSLX
+
+```bash
+npm install --save clsx
+```
+
+## Criando os componentes
+
+Componentes criados
+
+- Heading.tsx
+- Text.tsx
+- Button.tsx
+- TextInput.tsx
+- Checkbox.tsx
+
 ## Adicionando o StoryBook
 
 ```bash
 npm i @storybook/storybook-deployer --save-dev
 npx sb init --builder @storybook/builder-vite --use-npm 
 ```
+
+Adicionando o StoryBook no packages.json
+
+```json
+{
+  "name": "lab-ds",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.19.3",
+    "@storybook/addon-actions": "^6.5.12",
+    "@storybook/addon-essentials": "^6.5.12",
+    "@storybook/addon-interactions": "^6.5.12",
+    "@storybook/addon-links": "^6.5.12",
+    "@storybook/builder-vite": "^0.2.4",
+    "@storybook/react": "^6.5.12",
+    "@storybook/testing-library": "^0.0.13",
+    "@types/react": "^18.0.17",
+    "@types/react-dom": "^18.0.6",
+    "@vitejs/plugin-react": "^2.1.0",
+    "autoprefixer": "^10.4.12",
+    "babel-loader": "^8.2.5",
+    "postcss": "^8.4.17",
+    "tailwindcss": "^3.1.8",
+    "typescript": "^4.6.4",
+    "vite": "^3.1.0"
+  }
+}
+```
+
+## Publicando os componentes criados no StoryBook
+
+- Heading.stories.tsx
+- Text.stories.tsx
+- Button.stories.tsx
+- TextInput.stories.tsx
+- Checkbox.stories.tsx
 
 ## Adicionando o RadixUI-Slot
 
