@@ -50,6 +50,46 @@ Estrutura dos Componentea gerados:
 
 ![image](https://user-images.githubusercontent.com/12506432/195759371-72ff7fff-39ac-46ae-896e-8a9059408f21.png)
 
+## Configurando o Projeto
+
+### Iniciando o repositório do Git
+
+```bash
+git init
+```
+
+### Iniciando a pasta do projeto
+
+```bash
+npm init -y
+```
+
+### Instalando o TailwindCSS
+
+```bash
+npm install -D tailwindcss  postcss autoprefixer
+npx tailwindcss init -p
+```
+
+### Adicionando o StoryBook
+
+```bash
+npm i @storybook/storybook-deployer --save-dev
+npx sb init --builder @storybook/builder-vite --use-npm 
+```
+
+### Adicionando o RadixUI-Slot
+
+```bash
+npm install @radix-ui/react-slot
+```
+
+### Adicionando o phosphor-react
+
+```bash
+npm i phosphor-react 
+```
+
 ## Deploy do Storybook no Github Pages
 
 Veja aqui a publicação do StoryBook no GitHub Pages
