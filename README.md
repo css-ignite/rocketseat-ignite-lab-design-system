@@ -67,8 +67,6 @@ git init
 Iniciando o projeto com o NodeJS
 
 ```bash
-npm init -y
-npm create vite
 npm create vite@latest
 ```
 
@@ -284,6 +282,66 @@ Componentes criados
 ```bash
 npm i @storybook/storybook-deployer --save-dev
 npx sb init --builder @storybook/builder-vite --use-npm 
+```
+
+Configurando o tema Darh no manager.js
+
+```js
+import { addons } from '@storybook/addons'
+import { themes } from '@storybook/theming'
+
+addons.setConfig({
+    theme: themes.dark,
+})
+```
+
+preview.cjs
+
+```cjs
+import { themes } from '@storybook/theming';
+import '../src/styles/global.css';
+
+export const parameters = {
+  actions: { argTypesRegex: "^on[A-Z].*" },
+  controls: {
+    matchers: {
+      color: /(background|color)$/i,
+      date: /Date$/,
+    },
+  },
+  docs: {
+    theme: themes.dark,
+  },
+}
+```
+
+Configurando o main.cjs
+
+```json
+module.exports = {
+    "stories": [
+      "../src/**/*.stories.mdx",
+      "../src/**/*.stories.@(js|jsx|ts|tsx)"
+    ],
+    "addons": [
+      "@storybook/addon-links",
+      "@storybook/addon-essentials",
+      "@storybook/addon-interactions"
+    ],
+    "framework": "@storybook/react",
+    "core": {
+      "builder": "@storybook/builder-vite"
+    },
+    "features": {
+      "storyStoreV7": true
+    },
+    viteFinal: (config, { configType }) => {
+      if (configType === 'PRODUCTION') {
+        config.base = '/rocketseat-ignite-lab-design-system/'
+      }
+      return config
+    },
+  }
 ```
 
 Adicionando o StoryBook no packages.json
