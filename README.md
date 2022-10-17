@@ -202,6 +202,24 @@ Instalando o CSLX
 npm install --save clsx
 ```
 
+## Adicionando o RadixUI-Slot
+
+```bash
+npm install @radix-ui/react-slot
+```
+
+## Adicionando o phosphor-react
+
+```bash
+npm i phosphor-react 
+```
+
+## Adicionando o RadixUI-Checkbox
+
+```bash
+npm install @radix-ui/react-checkbox
+```
+
 ## Criando os componentes
 
 Componentes criados
@@ -267,24 +285,6 @@ Adicionando o StoryBook no packages.json
 - Button.stories.tsx
 - TextInput.stories.tsx
 - Checkbox.stories.tsx
-
-## Adicionando o RadixUI-Slot
-
-```bash
-npm install @radix-ui/react-slot
-```
-
-## Adicionando o phosphor-react
-
-```bash
-npm i phosphor-react 
-```
-
-## Adicionando o RadixUI-Checkbox
-
-```bash
-npm install @radix-ui/react-checkbox
-```
 
 ## Deploy do Storybook no Github Pages
 
