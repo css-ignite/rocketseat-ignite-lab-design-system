@@ -1,7 +1,6 @@
+![Ignite#3](https://user-images.githubusercontent.com/12506432/196300958-ca71b8ae-8699-4b8c-b9a0-bbda02446679.png)
+
 # Ignite Lab #3 - Do Figma ao React
-
-![image](https://user-images.githubusercontent.com/12506432/195759740-3fd7e15d-afe7-4c8e-9e11-1767b2ac78bf.png)
-
 Evento disponibilizado pela [RocketSeat](https://www.rocketseat.com.br/)
 
 ## Tema: Design System com Figma, React e StoryBook
@@ -35,23 +34,21 @@ Durante as aulas, pude conhecer como montar uma estrutura visual de um design sy
 deploy automatizado com GitHub Actions e simulação do Front-End em Vite.
 
 ![image](https://user-images.githubusercontent.com/12506432/195761826-2861aa90-156f-45d3-9ec3-6730930b3757.png)
-
+  
 </div>
-
----
 
 ## Projeto no Figma
 
 [https://www.figma.com/file/2ws9TBu6IweT00RnFdCo6a/Ignite-Lab-Design-System?node-id=14%3A162](https://www.figma.com/file/2ws9TBu6IweT00RnFdCo6a/Ignite-Lab-Design-System?node-id=14%3A162)
-
-Pagina de Login:
+  
+### Pagina de Login:
 
 ![image](https://user-images.githubusercontent.com/12506432/195759270-ae386b8b-4737-408b-9a74-f961af057651.png)
+  
+### Estrutura dos Componentea gerados:
 
-Estrutura dos Componentea gerados:
-
-![image](https://user-images.githubusercontent.com/12506432/195759371-72ff7fff-39ac-46ae-896e-8a9059408f21.png)
-
+![image](https://user-images.githubusercontent.com/12506432/196312869-e9a46ccf-f881-4584-b1ad-d5213ec876fe.png)
+  
 ## Configurando o Projeto
 
 ## Iniciando o repositório do Git
@@ -62,15 +59,17 @@ Aqui eu inicio o meu repositório no git
 git init
 ```
 
-## Iniciando a pasta do projeto
+## Iniciando a pasta do projeto com o Vite
 
-Iniciando o projeto com o NodeJS
+- [https://vitejs.dev/guide/](https://vitejs.dev/guide/)
+
+## Iniciando o projeto
 
 ```bash
 npm create vite@latest
 ```
 
-Configurando o vite no package.json
+## Configurando o vite no package.json
 
 ```json
 {
@@ -82,9 +81,7 @@ Configurando o vite no package.json
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook",
-    "deploy-storybook": "storybook-to-ghpages"
+    "storybook": "start-storybook -p 6006"
   },
   "dependencies": {
     "@radix-ui/react-checkbox": "^1.0.0",
@@ -96,21 +93,12 @@ Configurando o vite no package.json
   },
   "devDependencies": {
     "@babel/core": "^7.19.3",
-    "@storybook/addon-actions": "^6.5.12",
-    "@storybook/addon-essentials": "^6.5.12",
-    "@storybook/addon-interactions": "^6.5.12",
-    "@storybook/addon-links": "^6.5.12",
-    "@storybook/builder-vite": "^0.2.4",
-    "@storybook/react": "^6.5.12",
-    "@storybook/storybook-deployer": "^2.8.12",
-    "@storybook/testing-library": "^0.0.13",
     "@types/react": "^18.0.17",
     "@types/react-dom": "^18.0.6",
     "@vitejs/plugin-react": "^2.1.0",
     "autoprefixer": "^10.4.12",
     "babel-loader": "^8.2.5",
     "postcss": "^8.4.17",
-    "tailwindcss": "^3.1.8",
     "typescript": "^4.6.4",
     "vite": "^3.1.0"
   }
@@ -148,22 +136,56 @@ dist-ssr
 
 ## Removendos pastas padrões para criação da estrutura do projeto
 
-Arquivos Removidos
+### Arquivos Removidos
 
 - src/App.css
 - src/index.css
 - src/assets/react.svg
 
-Arquivos editados
+### Arquivos editados
 
 - App.tsx
 - main.tsx
 
 ## Instalando o TailwindCSS
 
+- [https://tailwindcss.com/docs/installation](https://tailwindcss.com/docs/installation)
+
 ```bash
 npm install -D tailwindcss  postcss autoprefixer
 npx tailwindcss init -p
+```
+
+### Adicionando o TailwindCSS no packages.json
+
+```json
+{
+  "name": "lab-ds",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.19.3",
+    "@types/react": "^18.0.17",
+    "@types/react-dom": "^18.0.6",
+    "@vitejs/plugin-react": "^2.1.0",
+    "autoprefixer": "^10.4.12",
+    "babel-loader": "^8.2.5",
+    "postcss": "^8.4.17",
+    "tailwindcss": "^3.1.8",
+    "typescript": "^4.6.4",
+    "vite": "^3.1.0"
+  }
+}
 ```
 
 ## Configurando o globals.css
@@ -176,31 +198,21 @@ npx tailwindcss init -p
 
 ## Exportando os Tokens do Figma para o projeto
 
-Aqui eu gero o arquivo com os Tokens gerados no figma
+### Aqui eu gero o arquivo com os Tokens gerados no figma
 
-- tailwind.config.cjs
-  - fontSize
-  - colors
-  - fontFamily
+## Cores
 
-Adicionando a fonte inter do GoogleFonts
+- [Projeto Figma - Colors](https://www.figma.com/file/2ws9TBu6IweT00RnFdCo6a/Ignite-Lab-%233---Do-Figma-ao-React?node-id=46%3A101)
 
-```html
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
-    <title>Ignite Lab Design System</title>
-  </head>
-  <body>
-    <div id="root"></div>
-```
+![image](https://user-images.githubusercontent.com/12506432/196307824-ffffbb16-089e-411a-8273-6ab3b33bdfea.png)
 
-Configurando os Tokens no TailwindCSS
+## Font Size
+
+- [Projeto Figma - Componentes](https://www.figma.com/file/2ws9TBu6IweT00RnFdCo6a/Ignite-Lab-%233---Do-Figma-ao-React?node-id=15%3A2)
+
+![image](https://user-images.githubusercontent.com/12506432/196313091-b88e30ee-cadd-4c66-a086-3bc0b63492f5.png)
+
+## Configurando os Tokens no TailwindCSS
 
 ```cjs
 /** @type {import('tailwindcss').Config} */
@@ -243,7 +255,28 @@ module.exports = {
 }
 ```
 
-Instalando o CSLX
+## Adicionando a fonte inter do GoogleFonts no index.html
+
+- [https://fonts.google.com/specimen/Inter?vfquery=inter](https://fonts.google.com/specimen/Inter?vfquery=inter)
+
+```html
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+    <title>Ignite Lab Design System</title>
+  </head>
+  <body>
+    <div id="root"></div>
+```
+
+## Instalando o CSLX
+
+- [https://www.npmjs.com/package/clsx](https://www.npmjs.com/package/clsx)
 
 ```bash
 npm install --save clsx
@@ -251,11 +284,15 @@ npm install --save clsx
 
 ## Adicionando o RadixUI-Slot
 
+- [https://www.radix-ui.com/docs/primitives/utilities/slot#slot](https://www.radix-ui.com/docs/primitives/utilities/slot#slot)
+
 ```bash
 npm install @radix-ui/react-slot
 ```
 
 ## Adicionando o phosphor-react
+
+- [https://www.npmjs.com/package/phosphor-react](https://www.npmjs.com/package/phosphor-react)
 
 ```bash
 npm i phosphor-react 
@@ -263,13 +300,15 @@ npm i phosphor-react
 
 ## Adicionando o RadixUI-Checkbox
 
+- [https://www.radix-ui.com/docs/primitives/components/checkbox](https://www.radix-ui.com/docs/primitives/components/checkbox)
+
 ```bash
 npm install @radix-ui/react-checkbox
 ```
 
 ## Criando os componentes
 
-Componentes criados
+### Componentes criados
 
 - Heading.tsx
 - Text.tsx
@@ -279,12 +318,46 @@ Componentes criados
 
 ## Adicionando o StoryBook
 
+- [https://storybook.js.org/docs/react/get-started/introduction](https://storybook.js.org/docs/react/get-started/introduction)
+
 ```bash
 npm i @storybook/storybook-deployer --save-dev
 npx sb init --builder @storybook/builder-vite --use-npm 
 ```
 
-Configurando o tema Darh no manager.js
+## Configuração final do .gitignore removendo a pasta do StoryBook
+
+```.gitignore
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Storybook
+storybook-static
+```
+
+### Configurando o tema Dark no manager.js
 
 ```js
 import { addons } from '@storybook/addons'
@@ -295,7 +368,7 @@ addons.setConfig({
 })
 ```
 
-preview.cjs
+### Configurando o tema Dark no preview.cjs
 
 ```cjs
 import { themes } from '@storybook/theming';
@@ -315,9 +388,9 @@ export const parameters = {
 }
 ```
 
-Configurando o main.cjs
+### Configurando o main.cjs
 
-```json
+```cjs
 module.exports = {
     "stories": [
       "../src/**/*.stories.mdx",
@@ -344,7 +417,7 @@ module.exports = {
   }
 ```
 
-Adicionando o StoryBook no packages.json
+### Adicionando o StoryBook no packages.json
 
 ```json
 {
@@ -395,10 +468,10 @@ Adicionando o StoryBook no packages.json
 
 ## Deploy do Storybook no Github Pages
 
-Veja aqui a publicação do StoryBook no GitHub Pages
+### Veja aqui a publicação do StoryBook no GitHub Pages
 
 - [https://claudneysessa.github.io/rocketseat-ignite-lab-design-system](https://claudneysessa.github.io/rocketseat-ignite-lab-design-system/?path=/story/components-button--default)
-
+  
 <img width="1440" alt="image" src="https://user-images.githubusercontent.com/12506432/195783039-a5894c65-576a-4afa-a53a-92e09359e40c.png">
 
 <img width="1440" alt="image" src="https://user-images.githubusercontent.com/12506432/195783108-1897753f-12f0-4bc7-8b62-5b4986074414.png">
@@ -411,13 +484,13 @@ Veja aqui a publicação do StoryBook no GitHub Pages
 
 ## Instalação e uso
 
-Clone o projeto e acesse a pasta
+### Clone o projeto e acesse a pasta
 
 ```bash
 git clone https://github.com/claudneysessa/rocketseat-ignite-lab-design-system
 ```
 
-Siga os passos abaixo:
+### Siga os passos abaixo:
 
 ```bash
 # Instalar as Dependências
