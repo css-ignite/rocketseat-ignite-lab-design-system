@@ -547,48 +547,130 @@ module.exports = {
 
 ## Pagina de exemplo com os componentes
 
+Aqui vai o exemplo da tela de login criada com os componentes publicados no StoryBook
 
+## Adicionando interações no StoryBook
 
-## Ferramentas Utilizadas
+Links
 
-<div>
+- [https://storybook.js.org/docs/react/essentials/interactions](https://storybook.js.org/docs/react/essentials/interactions)
+- [https://storybook.js.org/addons/@storybook/addon-interactions](https://storybook.js.org/addons/@storybook/addon-interactions)
 
-<table border="0">
-  <tr>
-    <td align="center" width="96">
-      <a href="#VisualStudioCode-tech">
-        <img align="center" alt="devcss-Js" height="65" width="65" src="https://raw.githubusercontent.com/claudneysessa/RocketSeat-ignite-lab-design-system/f09dc9a18337c083ee209b5ebd8f0987d03b83bd/figma-1.svg?raw=true">
-      </a>
-    </td>
-    <td align="center" width="96">
-      <a href="#VisualStudioCode-tech">
-        <img align="center" alt="devcss-Js" height="65" width="65" src="https://raw.githubusercontent.com/claudneysessa/RocketSeat-ignite-lab-design-system/05ac7733917f772e1361c73b696a2d94ef1d4fe5/react-2.svg?raw=true">
-      </a>
-    </td>
-    <td align="center" width="96">
-      <a href="#VisualStudioCode-tech">
-        <img align="center" alt="devcss-Js" height="65" width="65" src="https://github.com/claudneysessa/claudneysessa/blob/main/images/language_icons/visual%20studio%20code.png?raw=true">
-      </a>
-    </td>
-    <td align="center" width="96">
-      <a href="#VisualStudioCode-tech">
-        <img align="center" alt="devcss-Js" height="65" width="65" src="https://raw.githubusercontent.com/claudneysessa/RocketSeat-ignite-lab-design-system/05ac7733917f772e1361c73b696a2d94ef1d4fe5/github-icon-1.svg?raw=true">
-      </a>
-    </td>
-    <td align="center" width="96">
-      <a href="#VisualStudioCode-tech">
-        <img align="center" alt="devcss-Js" height="65" width="65" src="https://raw.githubusercontent.com/claudneysessa/RocketSeat-ignite-lab-design-system/05ac7733917f772e1361c73b696a2d94ef1d4fe5/storybook-1.svg?raw=true">
-      </a>
-    </td>
-    <td align="center" width="96">
-      <a href="#VisualStudioCode-tech">
-        <img align="center" alt="devcss-Js" height="65" width="65" src="https://raw.githubusercontent.com/claudneysessa/RocketSeat-ignite-lab-design-system/05ac7733917f772e1361c73b696a2d94ef1d4fe5/tailwindcss.svg?raw=true">
-      </a>
-    </td>
-  </tr>
-</table>
+### Instalando as dependencias
 
-</div>
+```bash
+npm i @storybook/addon-interactions @storybook/jest @storybook/testing-library @storybook/test-runner --dev
+```
+
+Dependencias adicionadas
+
+- @storybook/addon-interactions
+- @storybook/jest
+- @storybook/testing-library
+- @storybook/test-runner
+
+### Adicionando o AddOn do interactions no main.cjs
+
+```cjs
+module.exports = {
+    "stories": [
+      "../src/**/*.stories.mdx",
+      "../src/**/*.stories.@(js|jsx|ts|tsx)"
+    ],
+    "addons": [
+      "@storybook/addon-links",
+      "@storybook/addon-essentials",
+      "@storybook/addon-interactions",
+      "@storybook/addon-a11y"
+    ],
+    "framework": "@storybook/react",
+    "core": {
+      "builder": "@storybook/builder-vite"
+    },
+    "features": {
+      "storyStoreV7": true,
+      "interactionsDebugger": true
+    },
+    viteFinal: (config, { configType }) => {
+      if (configType === 'PRODUCTION') {
+        config.base = '/rocketseat-ignite-lab-design-system/'
+      }
+      return config
+    },
+  }
+```
+
+### Instalando o Axios
+
+```bash
+npm i axios
+```
+
+### Instalando o MSW - Mock Service Worker
+
+```bash
+npm i msw --save-dev
+```
+
+### instalando o MSW Storybook Addon
+
+```bash
+npm i msw-storybook-addon --save-dev
+```
+
+### Iniciando o Service Worker
+
+```bash
+npx msw init public/
+```
+
+### Adicionando o Axios no main.cjs
+
+```cjs
+
+```cjs
+module.exports = {
+    "stories": [
+      "../src/**/*.stories.mdx",
+      "../src/**/*.stories.@(js|jsx|ts|tsx)"
+    ],
+    "addons": [
+      "@storybook/addon-links",
+      "@storybook/addon-essentials",
+      "@storybook/addon-interactions",
+      "@storybook/addon-a11y"
+    ],
+    "framework": "@storybook/react",
+    "core": {
+      "builder": "@storybook/builder-vite"
+    },
+    "features": {
+      "storyStoreV7": true,
+      "interactionsDebugger": true
+    },
+    "staticDirs": [
+      "../public"
+    ],
+    viteFinal: (config, { configType }) => {
+      if (configType === 'PRODUCTION') {
+        config.base = '/rocketseat-ignite-lab-design-system/'
+      }
+      return config
+    },
+  }
+```
+
+### Editando o arquivo preview.js
+
+```js
+import { initialize, mswDecorator } from 'msw-storybook-addon';
+
+// Initialize MSW
+initialize();
+
+// Provide the MSW addon decorator globally
+export const decorators = [mswDecorator];
+```
 
 ## Where to find me
 
@@ -612,7 +694,7 @@ module.exports = {
 
 ## Veja o meu Perfil no Github
 
-https://github.com/claudneysessa
+- [https://github.com/claudneysessa](https://github.com/claudneysessa)
 
 ## Contact
  - Instagram: [https://www.instagram.com/claudneysessa/](https://www.instagram.com/claudneysessa/)
