@@ -554,6 +554,8 @@ Link
 
 - [Sign In Page](https://claudneysessa.github.io/rocketseat-ignite-lab-design-system/?path=/story/poages-sign-in--default)
 
+![image](https://user-images.githubusercontent.com/12506432/197367265-62526e30-68d7-4b59-b0f0-8fc28bcba06e.png)
+
 ## Adicionando interações no StoryBook
 
 Links
