@@ -549,12 +549,16 @@ module.exports = {
 
 Aqui vai o exemplo da tela de login criada com os componentes publicados no StoryBook
 
+Link
+
+- [Sign In Page](https://claudneysessa.github.io/rocketseat-ignite-lab-design-system/?path=/story/poages-sign-in--default)
+
 ## Adicionando interações no StoryBook
 
 Links
 
-- [https://storybook.js.org/docs/react/essentials/interactions](https://storybook.js.org/docs/react/essentials/interactions)
-- [https://storybook.js.org/addons/@storybook/addon-interactions](https://storybook.js.org/addons/@storybook/addon-interactions)
+- [interactions](https://storybook.js.org/docs/react/essentials/interactions)
+- [@storybook/addon-interactions](https://storybook.js.org/addons/@storybook/addon-interactions)
 
 ### Instalando as dependencias
 
