@@ -1,6 +1,7 @@
+# Ignite Lab #3 - Do Figma ao React
+
 ![Ignite#3](https://user-images.githubusercontent.com/12506432/196300958-ca71b8ae-8699-4b8c-b9a0-bbda02446679.png)
 
-# Ignite Lab #3 - Do Figma ao React
 Evento disponibilizado pela [RocketSeat](https://www.rocketseat.com.br/)
 
 ## Tema: Design System com Figma, React e StoryBook
@@ -41,11 +42,11 @@ deploy automatizado com GitHub Actions e simulação do Front-End em Vite.
 
 [https://www.figma.com/file/2ws9TBu6IweT00RnFdCo6a/Ignite-Lab-Design-System?node-id=14%3A162](https://www.figma.com/file/2ws9TBu6IweT00RnFdCo6a/Ignite-Lab-Design-System?node-id=14%3A162)
   
-### Pagina de Login:
+### Pagina de Login
 
 ![image](https://user-images.githubusercontent.com/12506432/195759270-ae386b8b-4737-408b-9a74-f961af057651.png)
   
-### Estrutura dos Componentea gerados:
+### Estrutura dos Componentea gerados
 
 ![image](https://user-images.githubusercontent.com/12506432/196312869-e9a46ccf-f881-4584-b1ad-d5213ec876fe.png)
   
@@ -701,5 +702,6 @@ export const decorators = [mswDecorator];
 - [https://github.com/claudneysessa](https://github.com/claudneysessa)
 
 ## Contact
- - Instagram: [https://www.instagram.com/claudneysessa/](https://www.instagram.com/claudneysessa/)
- - Linkedin: [https://www.linkedin.com/in/claudneysessa/](https://www.linkedin.com/in/claudneysessa/)
+
+- Instagram: [https://www.instagram.com/claudneysessa/](https://www.instagram.com/claudneysessa/)
+- Linkedin: [https://www.linkedin.com/in/claudneysessa/](https://www.linkedin.com/in/claudneysessa/)
